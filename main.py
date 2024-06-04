@@ -35,12 +35,12 @@ df_municipalites['Population_Category'] = pd.cut(df_municipalites['Pop21'], bins
 # Diagramme en barres horizontales du nombre de municipalités dans chaque catégorie
 Nb_villes_categorie = df_municipalites['Population_Category'].value_counts()
 Nb_villes_categorie.plot(kind='barh', ax=axes[1], color='red')
-# légende des axes
 axes[1].set_xlabel('Catégorie des municipalités')
 axes[1].set_ylabel('Nombre de municipalités')
 axes[1].set_title('Nombre de municipalités dans chaque catégorie de population en 2021')
 
 # ajustement automatique
 plt.tight_layout()
-# affichage des graphiques
+
+
 plt.show()
